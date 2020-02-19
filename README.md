@@ -2,11 +2,7 @@ Utils to work with `package.json` files.
 
 Install globally or locally
 
-<<<<<<< HEAD
     npm install -g @corratech/package-utils
-=======
-    npm install -g @tcurdt/package-utils
->>>>>>> 6c6a79d494eb801aa70ef172e5bb9925f32e4ed8
 
 # package-merge
 
@@ -23,7 +19,11 @@ In the API you can provide custom handling via callback.
     mkdirp@0.5.1
     moment@2.11.2
 
-With `package-deps` you get the dependencies of all the project files passed in. With the `-d` option this also includes the `devDependencies`. On the command line clashing versions will be reported and the last version wins.
+With `package-deps` you get the dependencies of all the project files passed in. 
+With the `-d` option this includes only the `devDependencies` section. 
+With the `-r` option this includes only the `dependencies` section. 
+With the `-a` option this includes both the sections. 
+On the command line clashing versions will be reported and the last version wins. You should manually update the packages with correct version.
 
 # package-resolve
 
