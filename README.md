@@ -2,7 +2,11 @@ Utils to work with `package.json` files.
 
 Install globally or locally
 
+<<<<<<< HEAD
     npm install -g @corratech/package-utils
+=======
+    npm install -g @tcurdt/package-utils
+>>>>>>> 6c6a79d494eb801aa70ef172e5bb9925f32e4ed8
 
 # package-merge
 
