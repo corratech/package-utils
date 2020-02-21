@@ -62,7 +62,7 @@ program
     console.log("Following Dependencies identified across all components");
     console.error("=======================================================================================");
     deps.forEach(function(version, name) {
-      console.log(name + "@" + version)
+      console.log('"' + name + '"' + ': "' + version + '",');
     })
   })
   .parse(process.argv);
