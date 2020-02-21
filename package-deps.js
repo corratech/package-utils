@@ -58,11 +58,13 @@ program
         })
       })
     })
+    //sort MAP
+    sortedDeps = new Map([...deps.entries()].sort());
     console.log("");
     console.log("Following Dependencies identified across all components");
     console.error("=======================================================================================");
-    deps.forEach(function(version, name) {
-      console.log('"' + name + '"' + ': "' + version + '",');
+    sortedDeps.forEach(function(version, name) {
+      console.log('\t\t"' + name + '"' + ': "' + version + '",');
     })
   })
   .parse(process.argv);
